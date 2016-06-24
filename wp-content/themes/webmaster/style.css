@@ -1,8 +1,8 @@
 /*
-Theme Name: Webmaster Theme 
+Theme Name: Brutal Theme 
 Theme URI: https://justinjackson.ca
 Version: 0.09
-Description: Text only theme.
+Description: Brutalist theme.
 Author: Justin Jackson
 Author URI: https://justinjackson.ca
 
@@ -14,17 +14,17 @@ Tags: one-column, fixed-width, light, right-sidebar, flexible-width, custom-menu
 
 
 body {
-	margin: 120px 0 0 25%;
-	font: 400 18px/1.68, "Times New Roman", Times, serif
+	font-family: 'Roboto Mono', monospace;
+	font-size:14px;
+	line-height:1.75;
+	max-width:46em;
+	padding:2em;
 }
 
 header, article, footer {
 	max-width: 600px;
 }
 
-article {
-	margin: 47px 0;
-}
 
 .home article, .page article {
 	max-width: 600px;
@@ -33,78 +33,21 @@ article {
 .single article {
 }
 
-footer {
-	margin: 0 0 76px 0;
-}
-
-/* = typography ----------------------- */
-
-h1, h2, h3, h4, h5, h1 a, h2 a, h3 a, h4 a, h5 a {
-	line-height: 1;
+h1 {
+	font-size: 1.5em;
 }
 
 h2 {
-}
-
-.single h2 {
-	padding-bottom: 23px;
-	letter-spacing: -1px;
-	font-weight: 700;
-	font-size: 56px;
-}
-
-.page h2 {
-	padding-bottom: 23px;
-	letter-spacing: -1px;
-	font-weight: 700;
-	font-size: 56px;
-}
-
-#hometop {
-	padding-bottom: 23px;
-	letter-spacing: -1px;
-	font-weight: 700;
-	font-size: 56px;
-	color: #990000;
-}
-
-.home h2 {
-	padding-bottom: 23px;
-	font-weight: 700;
-	font-size: 23px;
-	line-height: 1.34;
+	font-size: 1.2em;
+	line-height: 1.2em;
 }
 
 h3 {
-	padding: 23px 0;
-	font-weight: 700;
-	font-size:20px;
-	line-height: 1.34;
-}
-
-h4 {
-	padding: 23px 0;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 1.34;
+	font-size:1em;
 }
 
 p {
-}
-
-article p, article ul, article ol {
-	padding-bottom: 23px;
-	font-size: 20px;
-	line-height: 1.34;
-}
-
-footer p {
-	font-size: 14px;
-	padding-bottom: 14px;
-}
-
-strong {
-	font-weight: 700;
+	margin:1.75em 0;
 }
 
 small, .wp-caption-text {
@@ -158,26 +101,6 @@ hr {
 	border-top: 4px solid rgba(77, 77, 77, .15);
 }
 
-a {
-	border-bottom: 1px solid rgba(77, 77, 77, .25);
-	color: rgba(77, 77, 77, 1);
--webkit-transition: color .6s ease;
--moz-transition: color .6s ease;
--o-transition: color .6s ease;
-transition: color .6s ease;
-}
-
-a:hover {
-	color: rgba(77, 77, 77, .5);
-}
-
-small a {
-	border-bottom: 1px solid rgba(51, 51, 51, .25) !important;
-}
-
-.red h2, a:hover {
-	color: #990000;
-}
 
 a.button {
 	padding: 10px;
@@ -193,7 +116,6 @@ a.button {
 .menu {
 	display: block;
 	padding-bottom: 23px;
-	font-size: 18px;
 	opacity: .5;
 }
 .menu ul {
@@ -215,7 +137,6 @@ form {
 }
 input, textarea {
 	background: rgba(77, 77, 77, .05);
-	font: 400 18px/1.68 'Merriweather', sans-serif;
 	padding: 5px;
 	border-radius: 5px;
 }
@@ -225,18 +146,6 @@ input[type="submit"], button {
 	padding: 5px 20px;
 }
 
-	::-webkit-input-placeholder {
-color: rgba(77, 77, 77, .5);
-}
-	:-moz-placeholder {
-color: rgba(77, 77, 77, .5);
-}
-	::-moz-placeholder {
-color: rgba(77, 77, 77, .5);
-}
-	:-ms-input-placeholder {
-color: rgba(77, 77, 77, .5);
-}
 /* = common ----------------------- */
 
 .alignleft {
@@ -275,14 +184,6 @@ color: rgba(77, 77, 77, .5);
 }
 
 
-
-
-
-
-
-
-
-
 /* = media queries ----------------------- */
 
 @media screen and (max-height: 700px) {
@@ -296,17 +197,6 @@ margin: 20px;
 }
  header, article, footer {
 max-width: 100%;
-}
-#hometop {
- padding-bottom: 23px;
- font-weight: 700;
- font-size: 29px;
- color: #990000;
-}
- .single h2, .page h2 {
-padding-bottom: 23px;
-font-weight: 700;
-font-size: 29px;
 }
  blockquote {
 margin: 0 0 23px 23px;
